@@ -9,12 +9,7 @@ p {font-family: Palatino, 'Palatino Linotype', sans-serif;
  	font-size: 24px;
 	color: #ffffff;
 	text-align: center;
-}
-
-.page-title {
-	text-align: center;
-	font-weight: 100;
-	
+	float: center;
 }
 
 
@@ -22,6 +17,7 @@ body {
 	margin:0;
 	padding:0;
 	height: 100%;
+	width: 100%;
 	background-image: url(bg.jpg);
 	background-color: #0b0b0b;
 	background-size: 1920px 1080px;
@@ -29,35 +25,31 @@ body {
 }
 
 nav {
-	bottom: 0px;
+	top: -80px;
 	position: fixed;
-	height: 160px;
 	width: 100%;
+	height: 100px;
 	opacity: 0.95;
 	font-family: Palatino, 'Palatino Linotype', sans-serif;
 	font-size: 24px;
 	background-color: #0b0b0b;
-	text-align: center;
+}
+.logonav {
+	padding: 5px;
 }
 nav li {
+	margin: auto;
+	float: left;
 	display: inline;
-	margin-top: 68px;
-	margin-right: 200px;
-}
+	}
+
 nav ul {
 	margin: 0;
 	padding: 0;
+	width: 100%;
 	display: flex;
 	justify-content: center;
 	}
-
-header {
-	height: 90px;
-	width: 1080px;
-	opacity: 0.8;
-	background-color: #0b0b0b;
-	margin: 0px;
-}
 
 a:link {
 	text-decoration: none;
@@ -71,15 +63,22 @@ a:hover {
 	text-decoration: none;
 	color: #f26522
 }
-
 .main {
-	height: 300px;
-	width: 1080px;
-	opacity: 1;
-	
+	padding: 300px;
+	border: 0px;
+	margin: 0px;
+
 }
-.navlogo {
-	padding: 10px;
-	margin-top: 30px;
-	float: left;
+
+.menuclose {
+	float: center; 
+}
+
+nav {
+	transition-property: top;
+	transition-duration: 0.5s;
+	transition-timing-function: ease-in;
+}
+nav:hover {
+	top: 0px;
 }
