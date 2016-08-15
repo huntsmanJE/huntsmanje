@@ -37,6 +37,37 @@ nav {
 .logonav {
 	padding: 5px;
 }
+
+.dropbtn {
+	background-color: #0b0b0b
+	color: white;
+	border: none;
+	cursor: pointer;
+}
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+.dropdown-content {
+	font-size: 20px;
+	display: none;
+	position: absolute;
+	background-color: #0b0b0b;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.dropdown-content a {
+	color: white
+	padding: 8px 12px;
+	text-decoration: none;
+	display: block;
+}
+.dropdown-content a:hover { background-color: #000000}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
 nav li {
 	margin: auto;
 	float: left;
@@ -81,4 +112,13 @@ nav {
 }
 nav:hover {
 	top: 0px;
+}
+
+.link {
+	border-style: none none solid none22:27 15/08/2016;
+	border-radius: 2px;
+	border-color: #ffffff;
+}
+.main-video {
+	padding: 110px;
 }
