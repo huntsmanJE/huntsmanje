@@ -20,7 +20,8 @@ body {
 	width: 100%;
 	background-image: url(bg.jpg);
 	background-color: #0b0b0b;
-	background-size: 1920px 1080px;
+	background-size: cover; 
+	background-position: center;
 	background-repeat: repeat;
 }
 
