@@ -1,125 +1,97 @@
-h1 {font-family: Palatino, 'Palatino Linotype', sans-serif;
+h1 {font-family: Futura, "Trebuchet MS", Arial, sans-serif;
 	font-size: 72px; 
 	color: white;
-	opacity: 0.8;
 	font-weight: 100;
 }
 
-p {font-family: Palatino, 'Palatino Linotype', sans-serif;
+p {font-family: Futura, "Trebuchet MS", Arial, sans-serif;
  	font-size: 24px;
 	color: #ffffff;
 	text-align: center;
 	float: center;
 }
 
-
 body {
 	margin:0;
 	padding:0;
 	height: 100%;
 	width: 100%;
-	background-image: url(bg.jpg);
+	background: url(bg.jpg) no-repeat center center fixed;
 	background-color: #0b0b0b;
 	background-size: cover; 
-	background-position: center;
-	background-repeat: repeat;
 }
 
-nav {
-	top: -80px;
-	position: fixed;
-	width: 100%;
-	height: 100px;
-	opacity: 0.95;
-	font-family: Palatino, 'Palatino Linotype', sans-serif;
-	font-size: 24px;
-	background-color: #0b0b0b;
-}
-.logonav {
-	padding: 5px;
-}
-
-.dropbtn {
-	background-color: #0b0b0b
-	color: white;
-	border: none;
+#container {
 	cursor: pointer;
-}
-.dropdown {
-	position: relative;
-	display: inline-block;
-}
-.dropdown-content {
-	font-size: 20px;
-	display: none;
-	position: absolute;
-	background-color: #0b0b0b;
-	min-width: 160px;
-	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-}
-.dropdown-content a {
-	color: white
-	padding: 8px 12px;
-	text-decoration: none;
-	display: block;
-}
-.dropdown-content a:hover { background-color: #000000}
-
-.dropdown:hover .dropdown-content {
-	display: block;
+	position: fixed;
+	bottom: 2%;
+	right: 2%;
+    	display: inline-block;
 }
 
-nav li {
-	margin: auto;
-	float: left;
-	display: inline;
-	}
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.2s;
+}
 
-nav ul {
-	margin: 0;
-	padding: 0;
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	}
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+}
 
-a:link {
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+}
+
+#logo {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.sidenav {font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #0b0b0b;
+    overflow-x: hidden;
+    padding-top: 20%;
+    transition: 0.5s;
+	border-style: none none none solid;
+	border-color: white;
+
+    	
+}
+
+.sidenav a {
+	padding: 5px;
+	margin: 30px;
+	font-size: 40px;
 	text-decoration: none;
 	color: white;
+	display: block;
+	transition: 0.1s;
 }
-a:visited {
-	text-decoration: none;
-	color: white;
-}
-a:hover {
-	text-decoration: none;
-	color: #f26522
-}
-.main {
-	padding: 300px;
-	border: 0px;
-	margin: 0px;
-
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f26522;
+	border-style: none none none solid;
+	border-color: #f26522;
 }
 
-.menuclose {
-	float: center; 
-}
-
-nav {
-	transition-property: top;
-	transition-duration: 0.5s;
-	transition-timing-function: ease-in;
-}
-nav:hover {
-	top: 0px;
-}
-
-.link {
-	border-style: none none solid none22:27 15/08/2016;
-	border-radius: 2px;
-	border-color: #ffffff;
-}
-.main-video {
-	padding: 110px;
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
 }

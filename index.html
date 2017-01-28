@@ -1,41 +1,50 @@
-<!DOCTYPE>
+<!DOCTYPE html>
 <html>
+
 <head>
-<link rel="icon"
-	type="image/ico"
-	href="favicon.ico">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<link rel="icon" type="image/ico" href="favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta charset="utf-8"/>
-<title>Huntsman Gaming
+<title>Huntsman Studios
 </title>
 <link rel="stylesheet" type="text/css" href="style.css"/>
 </head>
-
 <body>
-<nav>
-<center>
-<ul>
-	<li class="link"><a href="#">Home</a></li>
-	<li class="dropdown">
-		<a href="#" class="dropbtn">Videos</a>
-		<div class="dropdown-content">
-			<a href="videosbf1.html">Battlefield 1</a>
-			<a href="videosbf4.html">Battlefield 4</a>
-		</div>
-		</li>
-	<li><img src="huntsman-nobg-white.png" class="navlogo" alt="Huntsman Gaming" width="80" height="80"></li>
-	<li class="link"><a href="teams.html">Teams</a></li>
-	<li class="link"><a href="about.html">About</a></li>
-</ul>
-<img src="menuclose.png" class="menuclose" height="24" width="24">
-</center>
-</nav>
-<div class="main">
-<center>
-<img src="huntsman-nobg-white-text.png" class="logo" alt="Huntsman Gaming" width="500" height="160">
+<div id="navbar" class="sidenav">
+	<ul style="list-style-type: none;">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<a href="#">Home</a>
+		<a href="#">About</a>
+		<a href="#">ASTC</a>
+	</ul>
+</div>
 
-<h1> Not all those who wander are lost. </h1>
+<div id="main">
+			<div id="logo"><img src="huntsman-nobg-white.png" alt="Logo" height="125" width="125"></div>
+			<div id="container" onClick="myFunction(), openNav()" >
+	<div class="bar1"></div>
+	<div class="bar2"></div>
+	<div class="bar3"></div>
+	</div>
 </div>
-</center>
-</div>
-</body>
+</body> 
+
+
+<script>
+function myFunction() {
+    container.classList.toggle("change");
+}
+</script>
+<script>
+function openNav() {
+    document.getElementById("navbar").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("navbar").style.width = "0";
+	container.classList.toggle("change");
+}
+</script>
+ 
 </html>
